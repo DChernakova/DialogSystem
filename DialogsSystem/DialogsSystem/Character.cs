@@ -8,8 +8,8 @@ namespace DialogsSystem
 {
     abstract class Character
     {
-        public string pathSpeaksFile ;
-        public string firstName;
-        public int Id;
+        public string pathSpeaksFile { get; set; }
+        public string firstName { get; set; }
+        public int Id { get; set; }
     }
 }

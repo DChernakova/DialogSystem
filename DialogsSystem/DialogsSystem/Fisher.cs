@@ -9,12 +9,6 @@ namespace DialogsSystem
 {
     class Fisher: Character
     {
-        public Fisher()
-        {
-            pathSpeaksFile = "SpeaksFisher.xml";
-            firstName = "Рыбак";
-            Id = 1;
-        }
         
 
     }

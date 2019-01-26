@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,14 +19,25 @@ namespace DialogsSystem
         /// <param name="spId">Идентификатор диалога</param>
         /// <param name="doc">Файл с фразами</param>
         /// <returns></returns>
-        public static Speak GetSpeak(string spId, XmlDocument doc)
+        public static Speak GetSpeak(int spId, XmlDocument doc)
         {
             Speak res = new Speak();
             XmlElement curSpeak = doc.DocumentElement;
             string xpath = "//Speak[@id=" + spId + "]";
-            XmlNode speakNode=  curSpeak.SelectSingleNode(xpath);
+            XmlNodeList speakNodes=  curSpeak.SelectNodes(xpath);
+            XmlNode speakNode;
+            //если несколько вариантов диалога, то выбираем рандомно
+            if (speakNodes.Count > 1)
+            {
+                Random rnd = new Random();
+                double p = 1.0 / speakNodes.Count; //вероятность попадания в один из вариантов
+                double pElem = rnd.NextDouble();
+                int ind = int.Parse(Math.Round(pElem / p).ToString());
+                speakNode = speakNodes.Item(ind);
+            }
+            else speakNode = speakNodes.Item(0);
 
-            
+
             res.npcText = speakNode.Attributes["npcText"].Value;
             if (speakNode.SelectNodes("answer").Count!=0)
             {
@@ -54,7 +66,8 @@ namespace DialogsSystem
         /// <returns></returns>
         public static XmlDocument GetXmlSpeaks(string path)
         {
-            string filePath= @"C:\\Users\\Диана\\Desktop\\justProject\\DialogsSystem\\DialogsSystem\" +path;
+            string startupPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+            string filePath= startupPath +"\\"+ path;
             XmlDocument res = new XmlDocument();
             res.Load(filePath);
             return res;

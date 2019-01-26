@@ -31,6 +31,8 @@
             this.comboCharacters = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.npcText = new System.Windows.Forms.TextBox();
+            this.listAnswers = new System.Windows.Forms.ListBox();
+            this.btnAnswer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboCharacters
@@ -59,11 +61,31 @@
             this.npcText.Size = new System.Drawing.Size(352, 68);
             this.npcText.TabIndex = 3;
             // 
+            // listAnswers
+            // 
+            this.listAnswers.FormattingEnabled = true;
+            this.listAnswers.Location = new System.Drawing.Point(139, 98);
+            this.listAnswers.Name = "listAnswers";
+            this.listAnswers.Size = new System.Drawing.Size(352, 56);
+            this.listAnswers.TabIndex = 4;
+            // 
+            // btnAnswer
+            // 
+            this.btnAnswer.Location = new System.Drawing.Point(139, 160);
+            this.btnAnswer.Name = "btnAnswer";
+            this.btnAnswer.Size = new System.Drawing.Size(75, 23);
+            this.btnAnswer.TabIndex = 5;
+            this.btnAnswer.Text = "Ответить";
+            this.btnAnswer.UseVisualStyleBackColor = true;
+            this.btnAnswer.Click += new System.EventHandler(this.btnAnswer_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(498, 195);
+            this.ClientSize = new System.Drawing.Size(498, 190);
+            this.Controls.Add(this.btnAnswer);
+            this.Controls.Add(this.listAnswers);
             this.Controls.Add(this.npcText);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboCharacters);
@@ -79,6 +101,8 @@
         private System.Windows.Forms.ComboBox comboCharacters;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox npcText;
+        private System.Windows.Forms.ListBox listAnswers;
+        private System.Windows.Forms.Button btnAnswer;
     }
 }
 
