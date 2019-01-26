@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Dialog>
+  <Speak id="0" npcText="Сегодня нынче богатый улов">
+    <answer text="Согласен" speakId="" exit="true" ></answer>
+  </Speak>
+  <Speak id="1" npcText="Хочешь открою тебе секрет как поймать редких рыб?">
+    <answer text="Расскажи мне" speakId="2" exit="false" ></answer>
+    <answer text="Нет, я уже знаю" speakId="3" exit="false"></answer>
+  </Speak>
+  <Speak id="2" npcText="Хорошего улова!">
+    <answer text="Спасибо" speakId="" exit="true"></answer>
+  </Speak>
+</Dialog>

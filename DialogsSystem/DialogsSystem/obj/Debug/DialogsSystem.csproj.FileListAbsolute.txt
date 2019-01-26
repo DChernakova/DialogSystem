@@ -1,0 +1,11 @@
+C:\Users\Диана\Desktop\justProject\DialogsSystem\DialogsSystem\bin\Debug\DialogsSystem.exe.config
+C:\Users\Диана\Desktop\justProject\DialogsSystem\DialogsSystem\bin\Debug\DialogsSystem.exe
+C:\Users\Диана\Desktop\justProject\DialogsSystem\DialogsSystem\bin\Debug\DialogsSystem.pdb
+C:\Users\Диана\Desktop\justProject\DialogsSystem\DialogsSystem\obj\Debug\DialogsSystem.csprojResolveAssemblyReference.cache
+C:\Users\Диана\Desktop\justProject\DialogsSystem\DialogsSystem\obj\Debug\DialogsSystem.Form1.resources
+C:\Users\Диана\Desktop\justProject\DialogsSystem\DialogsSystem\obj\Debug\DialogsSystem.Properties.Resources.resources
+C:\Users\Диана\Desktop\justProject\DialogsSystem\DialogsSystem\obj\Debug\DialogsSystem.csproj.GenerateResource.cache
+C:\Users\Диана\Desktop\justProject\DialogsSystem\DialogsSystem\obj\Debug\DialogsSystem.csproj.CoreCompileInputs.cache
+C:\Users\Диана\Desktop\justProject\DialogsSystem\DialogsSystem\obj\Debug\DialogsSystem.exe
+C:\Users\Диана\Desktop\justProject\DialogsSystem\DialogsSystem\obj\Debug\DialogsSystem.pdb
+C:\Users\Диана\Desktop\justProject\DialogsSystem\DialogsSystem\bin\Debug\SpeaksFisher.xml
